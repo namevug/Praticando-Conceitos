@@ -1,6 +1,6 @@
 # ToDo
 
-## Aplicação desenvolvida para o desafio "Praticando Conceitos" da trilha Ignite-React da <a href="https://www.rocketseat.com.br">Rocketseat</a>
+### Aplicação desenvolvida para o desafio "Praticando Conceitos" da trilha Ignite-React da <a href="https://www.rocketseat.com.br">Rocketseat</a>
 
 <br/>
 

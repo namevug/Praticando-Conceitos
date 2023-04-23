@@ -1,0 +1,12 @@
+.header {
+    height: 12.5rem;
+
+    display: flex;
+    align-items: center;
+
+    background: var(--gray-700);
+}
+
+.header img {
+    margin: 0 auto;
+}

@@ -6,6 +6,11 @@ export function Header() {
     <>
       <header className={styles.header}>
         <img src={todoLogo} alt='ToDo Logo' />
+
+        <form className={styles.newTask}>
+          <input type='text' placeholder='Adicione uma nova tarefa' />
+          <button>Criar</button>
+        </form>
       </header>
     </>
   )

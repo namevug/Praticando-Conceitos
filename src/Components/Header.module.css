@@ -41,6 +41,11 @@
     color: var(--gray-300);
 }
 
+.newTask input:focus {
+    outline: none !important;
+    border: 1.5px solid var(--purple-300);
+}
+
 .newTask button {
     height: 100%;
     padding: 0 1rem;
@@ -49,7 +54,10 @@
     
     display: flex;
     align-items: center;
+    gap: 0.5rem;
 
+    font-weight: 700;
+    font-size: 0.875rem;
     background: var(--blue-300);
     color: var(--gray-100);
 }

@@ -6,7 +6,6 @@ export function App() {
     <>
       <div>
         <Header />
-        <p>Hello Vug</p>
       </div>
     </>
   )

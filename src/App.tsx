@@ -1,4 +1,5 @@
 import { Header } from './Components/Header/Header'
+import { Tasks } from './Components/Tasks/Index'
 import './styles/global.css'
 
 export function App() {
@@ -6,6 +7,7 @@ export function App() {
     <>
       <div>
         <Header />
+        <Tasks />
       </div>
     </>
   )

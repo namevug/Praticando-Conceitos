@@ -1,3 +1,4 @@
+import { Card } from '../Card/Index'
 import styles from './Tasks.module.css'
 
 export function Tasks() {
@@ -15,6 +16,10 @@ export function Tasks() {
             <span>2 de 5</span>
           </div>
         </header>
+        <div className={styles.cards}>
+          <Card />
+          <Card />
+        </div>
       </section>
     </>
   )

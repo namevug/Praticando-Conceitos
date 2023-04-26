@@ -3,14 +3,14 @@ import { Header } from './Components/Header/Header'
 import { Tasks } from './Components/Tasks/Index'
 import './styles/global.css'
 
-export interface Card {
+export interface iCard {
   id: string
   title: string
   isCompleted: boolean
 }
 
 export function App() {
-  const [tasks, setTask] = useState<Card[]>([])
+  const [tasks, setTask] = useState<iCard[]>([])
 
   return (
     <>

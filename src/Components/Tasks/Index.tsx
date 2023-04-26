@@ -1,7 +1,12 @@
+import { iCard } from '../../App'
 import { Card } from '../Card/Index'
 import styles from './Tasks.module.css'
 
-export function Tasks() {
+interface Props {
+  tasks: iCard[]
+}
+
+export function Tasks({ tasks }: Props) {
   return (
     <>
       <section className={styles.tasks}>
@@ -17,8 +22,9 @@ export function Tasks() {
           </div>
         </header>
         <div className={styles.cards}>
-          <Card />
-          <Card />
+          {tasks.map((tasks) => {
+            return <Card />
+          })}
         </div>
       </section>
     </>

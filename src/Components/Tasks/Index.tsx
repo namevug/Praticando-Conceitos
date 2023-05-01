@@ -1,5 +1,6 @@
 import { Task } from '../../App'
 import { Card } from '../Card/Index'
+import ClipBoard from '../../assets/ClipBoard.svg'
 import styles from './Tasks.module.css'
 
 interface Props {
@@ -39,6 +40,16 @@ export function Tasks({ tasks, onDelete, onComplete }: Props) {
               />
             )
           })}
+
+          {tasks.length <= 0 && (
+            <section className={styles.empty}>
+              <img src={ClipBoard} alt={ClipBoard} />
+              <div>
+                <p>Você ainda não tem tarefas cadastradas</p>
+                <span>Crie tarefas e organize seus itens a fazer</span>
+              </div>
+            </section>
+          )}
         </div>
       </section>
     </>

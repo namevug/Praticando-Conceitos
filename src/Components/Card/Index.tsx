@@ -18,7 +18,11 @@ export function Card({ task, onDelete, onComplete }: Props) {
       >
         {task.isCompleted ? <img src={CheckCircle} /> : <div />}
       </button>
-      <p>{task.title}</p>
+
+      <p className={task.isCompleted ? styles.textCompleted : ''}>
+        {task.title}
+      </p>
+
       <button className={styles.deleteButton} onClick={() => onDelete(task.id)}>
         <TbTrash size={20} />
       </button>

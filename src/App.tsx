@@ -10,18 +10,7 @@ export interface Task {
 }
 
 export function App() {
-  const [tasks, setTask] = useState<Task[]>([
-    {
-      id: 'teste',
-      title: 'teste',
-      isCompleted: true,
-    },
-    {
-      id: 'teste2',
-      title: 'teste2',
-      isCompleted: false,
-    },
-  ])
+  const [tasks, setTask] = useState<Task[]>([])
 
   function addTask(taskTitle: string) {
     setTask([
